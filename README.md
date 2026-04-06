@@ -149,19 +149,7 @@ The analysis focuses on answering the following key questions:
 
 ---
 
-## Tableau Visualizations
 
-### Sales by Category
-![Sales by Category](Visuals/sales_by_category.png)
-
-### Sales by Region
-![Sales by Region](Visuals/sales_region_pie.png)
-
-### Top 10 Products by Sales
-![Top Products](Visuals/top_products.png)
-
-### Monthly Sales Trend
-![Monthly Sales Trend](Visuals/monthly_sales.png)
 
 # Project Structure
 

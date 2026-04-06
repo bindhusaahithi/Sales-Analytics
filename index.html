@@ -9,7 +9,7 @@
 <body>
 
   <nav class="navbar">
-    <div class="nav-logo">Bindhu Saahithi</div>
+    <div class="logo">Bindhu Saahithi</div>
     <ul class="nav-links">
       <li><a href="#overview">Overview</a></li>
       <li><a href="#workflow">Workflow</a></li>
@@ -21,43 +21,48 @@
 
   <header class="hero">
     <div class="hero-content">
-      <p class="hero-subtitle">DATA ANALYTICS PROJECT PORTFOLIO</p>
+      <p class="tag">BUSINESS INTELLIGENCE PROJECT</p>
       <h1>Sales Analytics Project</h1>
-      <p class="hero-text">
-        An end-to-end sales analytics project using Python, SQL, and Tableau
-        to uncover revenue trends, regional performance, category insights,
-        and top-selling products.
+      <p>
+        End-to-end retail sales analysis using Python, SQL, and Tableau to uncover
+        revenue patterns, product performance, and business insights.
       </p>
       <div class="hero-buttons">
-        <a href="https://github.com/bindhusaahithi/Sales-Analytics" target="_blank" class="btn primary">View GitHub Repository</a>
-        <a href="#dataset" class="btn secondary">View Dataset</a>
+        <a href="https://github.com/bindhusaahithi/Sales-Analytics" target="_blank" class="btn primary">View GitHub</a>
+        <a href="#visuals" class="btn secondary">See Visuals</a>
       </div>
     </div>
   </header>
 
+  <section class="metrics container">
+    <div class="metric-card">
+      <h3>Total Sales</h3>
+      <p>$2.33M</p>
+    </div>
+    <div class="metric-card">
+      <h3>Total Profit</h3>
+      <p>$292K</p>
+    </div>
+    <div class="metric-card">
+      <h3>Total Orders</h3>
+      <p>5,111</p>
+    </div>
+  </section>
+
   <main class="container">
 
-    <section class="card full" id="overview">
+    <section id="overview" class="section">
       <h2>Project Overview</h2>
       <p>
-        This project analyzes retail sales data to identify important business insights
-        related to overall sales, profit, regional performance, product categories,
-        and sales trends over time.
-      </p>
-      <p>
-        Using Python, SQL, and Tableau, the project demonstrates a complete analytics
-        workflow including data cleaning, feature engineering, business querying,
-        and visual storytelling.
-      </p>
-      <p>
-        This project is designed to reflect a real-world business intelligence workflow
-        and showcase skills relevant to Data Analyst roles.
+        This project analyzes retail sales data to evaluate overall sales performance,
+        category contribution, top products, and regional trends. The objective is to
+        demonstrate a practical analytics workflow used in real business intelligence projects.
       </p>
     </section>
 
-    <section class="two-column">
-      <div class="card" id="tools">
-        <h2>Tools & Technologies</h2>
+    <section class="grid-2">
+      <div class="card">
+        <h2>Tools Used</h2>
         <ul>
           <li>Python</li>
           <li>Pandas</li>
@@ -69,132 +74,94 @@
         </ul>
       </div>
 
-      <div class="card" id="dataset">
+      <div class="card">
         <h2>Dataset</h2>
-        <p><strong>Dataset:</strong> Superstore Sales Dataset</p>
-        <p><strong>Type:</strong> Retail Sales / Business Data</p>
-        <p><strong>Includes:</strong> Orders, customers, products, sales, profit, shipping, and regions</p>
-        <p><strong>Prepared Using:</strong> Python data cleaning workflow</p>
+        <p><strong>Name:</strong> Superstore Sales Dataset</p>
+        <p><strong>Type:</strong> Retail / Business Data</p>
+        <p><strong>Includes:</strong> Orders, products, customers, profit, shipping, and region</p>
+        <p><strong>Prepared using:</strong> Python cleaning workflow</p>
       </div>
     </section>
 
-    <section class="card">
-      <h2>Project Objectives</h2>
-      <ul>
-        <li>Analyze overall sales and profit performance</li>
-        <li>Compare sales across regions</li>
-        <li>Identify the best-performing product categories</li>
-        <li>Find the top 10 products by revenue</li>
-        <li>Understand monthly sales trends</li>
-        <li>Demonstrate end-to-end analytics workflow using Python, SQL, and Tableau</li>
-      </ul>
-    </section>
-
-    <section class="card">
-      <h2>Skills Demonstrated</h2>
-      <ul>
-        <li>Data Cleaning and Preprocessing</li>
-        <li>Exploratory Data Analysis (EDA)</li>
-        <li>Business Querying with SQL</li>
-        <li>Data Visualization</li>
-        <li>Trend Analysis</li>
-        <li>Insight Generation</li>
-        <li>Project Documentation with GitHub</li>
-      </ul>
-    </section>
-
-    <section class="card" id="workflow">
+    <section id="workflow" class="section">
       <h2>Project Workflow</h2>
-      <ol>
-        <li><strong>Data Collection:</strong> Obtained the Superstore sales dataset.</li>
-        <li><strong>Data Cleaning:</strong> Cleaned and standardized the dataset using Python.</li>
-        <li><strong>Feature Engineering:</strong> Created year, month, and profit margin columns.</li>
-        <li><strong>Exploratory Analysis:</strong> Analyzed sales, profit, region, category, and product trends.</li>
-        <li><strong>SQL Analysis:</strong> Wrote business queries for revenue, profit, regions, categories, and trends.</li>
-        <li><strong>Visualization:</strong> Built charts and Tableau visualizations for storytelling.</li>
-      </ol>
+      <div class="workflow-box">
+        <div>Raw Data</div>
+        <div>Python Cleaning</div>
+        <div>EDA</div>
+        <div>SQL Analysis</div>
+        <div>Visualization</div>
+      </div>
     </section>
 
-    <section class="card">
-      <h2>Key Questions Answered</h2>
+    <section class="section">
+      <h2>Business Questions</h2>
       <ul>
         <li>What is the total sales revenue and total profit?</li>
         <li>Which region generates the highest sales?</li>
-        <li>Which category contributes the most to revenue?</li>
+        <li>Which categories perform best?</li>
         <li>What are the top 10 products by sales?</li>
         <li>How do sales change over time?</li>
       </ul>
     </section>
 
-    <section class="card" id="visuals">
+    <section id="visuals" class="section">
       <h2>Visual Analysis</h2>
-
       <div class="visual-grid">
         <div class="visual-card">
           <img src="Visuals/sales_by_category.png" alt="Sales by Category">
           <h3>Sales by Category</h3>
-          <p>Compares category-level revenue to identify the strongest business segments.</p>
+          <p>Compares revenue generated by each product category.</p>
         </div>
 
         <div class="visual-card">
           <img src="Visuals/sales_region_pie.png" alt="Sales by Region">
           <h3>Sales by Region</h3>
-          <p>Shows the distribution of total sales across business regions.</p>
+          <p>Shows the contribution of each region to total sales.</p>
         </div>
 
         <div class="visual-card">
           <img src="Visuals/top_products.png" alt="Top Products">
-          <h3>Top 10 Products</h3>
-          <p>Highlights the products generating the highest sales revenue.</p>
+          <h3>Top Products</h3>
+          <p>Highlights the best-performing products by revenue.</p>
         </div>
 
         <div class="visual-card">
           <img src="Visuals/monthly_sales.png" alt="Monthly Sales Trend">
           <h3>Monthly Sales Trend</h3>
-          <p>Tracks sales movement over time to identify growth patterns and fluctuations.</p>
+          <p>Displays how sales vary across time.</p>
         </div>
       </div>
     </section>
 
-    <section class="card" id="insights">
+    <section id="insights" class="section">
       <h2>Key Insights</h2>
-      <ul>
-        <li>The <strong>West region</strong> generated the highest total sales.</li>
-        <li><strong>Technology</strong> emerged as one of the strongest-performing categories.</li>
-        <li>A small number of products contributed a large portion of revenue.</li>
-        <li>Sales trends showed active month-to-month variation with overall growth.</li>
-      </ul>
+      <div class="insight-grid">
+        <div class="insight-card">West region generated the highest overall sales.</div>
+        <div class="insight-card">Technology was one of the strongest-performing categories.</div>
+        <div class="insight-card">A small number of products drove a large share of revenue.</div>
+        <div class="insight-card">Sales trends showed active month-to-month changes.</div>
+      </div>
     </section>
 
-    <section class="card">
-      <h2>Why This Project Matters</h2>
-      <p>
-        This project reflects the type of work commonly performed in business intelligence
-        and data analyst roles. It demonstrates the ability to clean real data, explore
-        performance metrics, write SQL queries, create business-focused visualizations,
-        and communicate actionable insights clearly.
-      </p>
-    </section>
-
-    <section class="card">
+    <section class="section">
       <h2>Conclusion</h2>
       <p>
-        This Sales Analytics project demonstrates an end-to-end analytics workflow from
-        raw data to business insights. It combines Python, SQL, and Tableau to provide
-        a structured and practical example of sales data analysis for portfolio purposes.
+        This project demonstrates how Python, SQL, and Tableau can be combined to perform
+        real-world sales analysis and communicate insights in a business-friendly way.
       </p>
     </section>
 
-    <section class="card project-link-box">
-      <h2>Project Link</h2>
-      <p>Explore the full code, notebook, SQL queries, and project files on GitHub.</p>
+    <section class="final-box">
+      <h2>Project Repository</h2>
+      <p>View the notebook, SQL queries, dataset, and project files on GitHub.</p>
       <a href="https://github.com/bindhusaahithi/Sales-Analytics" target="_blank" class="btn primary">Open GitHub Repository</a>
     </section>
 
   </main>
 
   <footer>
-    <p>© 2026 Bindhu Saahithi | Data Science Portfolio</p>
+    <p>© 2026 Bindhu Saahithi | Data Portfolio</p>
   </footer>
 
 </body>

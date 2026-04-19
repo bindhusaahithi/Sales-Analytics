@@ -3,277 +3,320 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Sales Analytics | Bindhu Saahithi</title>
+  <title>Bindhu Saahithi | Sales Analytics Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-
-  <nav class="navbar">
-    <div class="logo">Bindhu Saahithi</div>
-    <ul class="nav-links">
-      <li><a href="#overview">Overview</a></li>
-      <li><a href="#workflow">Workflow</a></li>
-      <li><a href="#python-visuals">Python Visuals</a></li>
-      <li><a href="#tableau-visuals">Tableau Visuals</a></li>
-      <li><a href="#insights">Insights</a></li>
-      <li><a href="https://github.com/bindhusaahithi/Sales-Analytics" target="_blank">GitHub</a></li>
-    </ul>
-  </nav>
-
-  <header class="hero">
-    <div class="hero-content">
-      <p class="tag">BUSINESS INTELLIGENCE PROJECT</p>
-      <h1>Sales Analytics Project</h1>
-      <p>
-        An end-to-end retail sales analysis project using Python, SQL, and Tableau
-        to uncover revenue trends, regional performance, category insights,
-        product performance, and pricing impact.
-      </p>
-
-      <div class="hero-buttons">
-        <a
-          href="https://github.com/bindhusaahithi/Sales-Analytics"
-          target="_blank"
-          class="btn primary"
-        >
-          View GitHub
-        </a>
-
-        <a
-          href="https://public.tableau.com/app/learn/sample-data"
-          target="_blank"
-          class="btn secondary"
-        >
-          View Dataset
-        </a>
-      </div>
-    </div>
-  </header>
-
-  <section class="metrics container">
-    <div class="metric-card">
-      <h3>Total Sales</h3>
-      <p>$2.33M</p>
-    </div>
-
-    <div class="metric-card">
-      <h3>Total Profit</h3>
-      <p>$292K</p>
-    </div>
-
-    <div class="metric-card">
-      <h3>Total Orders</h3>
-      <p>5,111</p>
-    </div>
-  </section>
-
-  <main class="container">
-    <section id="overview" class="section">
-      <h2>Project Overview</h2>
-
-      <p>
-        This project analyzes retail sales data to identify key business insights
-        related to total sales, profit, regional performance, product categories,
-        and top-performing products.
-      </p>
-
-      <p>
-        The project demonstrates a complete analytics workflow using Python for
-        data cleaning and exploratory analysis, SQL for business queries, and
-        Tableau for dashboard-style visualizations.
-      </p>
-    </section>
-
-    <section class="grid-2">
-      <div class="card">
-        <h2>Tools Used</h2>
-        <ul>
-          <li>Python</li>
-          <li>Pandas</li>
-          <li>Matplotlib</li>
-          <li>Jupyter Notebook</li>
-          <li>SQL (MySQL)</li>
-          <li>Tableau</li>
-          <li>Git & GitHub</li>
-        </ul>
-      </div>
-
-      <div class="card">
-        <h2>Dataset</h2>
-        <p><strong>Name:</strong> Sample Superstore</p>
-        <p><strong>Type:</strong> Retail / Business Data</p>
-        <p>
-          <strong>Description:</strong> A widely used retail dataset containing
-          customer orders, product categories, sales, profit, shipping details,
-          and regional information.
-        </p>
-        <p>
-          <strong>Source:</strong>
-          <a href="https://public.tableau.com/app/learn/sample-data" target="_blank">
-            Tableau Public Sample Data
-          </a>
-        </p>
-      </div>
-    </section>
-
-    <section id="workflow" class="section">
-      <h2>Project Workflow</h2>
-
-      <div class="workflow-box">
-        <div>Raw Data</div>
-        <div>Python Cleaning</div>
-        <div>EDA</div>
-        <div>SQL Analysis</div>
-        <div>Tableau</div>
-      </div>
-    </section>
-
-    <section class="section">
-      <h2>Business Questions</h2>
-      <ul>
-        <li>What is the total sales revenue and total profit?</li>
-        <li>Which region generates the highest sales?</li>
-        <li>Which product categories perform best?</li>
-        <li>What are the top-selling products?</li>
-        <li>How do sales change over time?</li>
-        <li>How does discount impact profitability?</li>
-      </ul>
-    </section>
-
-    <section id="python-visuals" class="section">
-      <h2>Python Visual Analysis</h2>
-      <p class="section-intro">
-        These visualizations were created using Python during exploratory data analysis.
-      </p>
-
-      <div class="visual-grid">
-        <div class="visual-card">
-          <img src="Visuals/sales_by_category.png" alt="Python Sales by Category" />
-          <h3>Sales by Category</h3>
-          <p>Python chart comparing category-level sales performance.</p>
-        </div>
-
-        <div class="visual-card">
-          <img src="Visuals/sales_region_pie.png" alt="Python Sales by Region" />
-          <h3>Sales by Region</h3>
-          <p>Python pie chart showing regional contribution to total sales.</p>
-        </div>
-
-        <div class="visual-card">
-          <img src="Visuals/top_products.png" alt="Python Top Products" />
-          <h3>Top Products</h3>
-          <p>Python visualization highlighting the highest revenue-generating products.</p>
-        </div>
-
-        <div class="visual-card">
-          <img src="Visuals/monthly_sales.png" alt="Python Monthly Sales Trend" />
-          <h3>Monthly Sales Trend</h3>
-          <p>Python line chart showing how sales changed over time.</p>
-        </div>
-      </div>
-    </section>
-
-    <section id="tableau-visuals" class="section">
-      <h2>Tableau Dashboard Analysis</h2>
-      <p class="section-intro">
-        These visualizations were created in Tableau to present business insights
-        in a dashboard format.
-      </p>
-
-      <div class="visual-grid">
-        <div class="visual-card">
-          <img src="Visuals/tableau_total_sales.png" alt="Tableau Total Sales KPI" />
-          <h3>Total Sales KPI</h3>
-          <p>Tableau KPI card summarizing the total revenue generated.</p>
-        </div>
-
-        <div class="visual-card">
-          <img src="Visuals/tableau_sales_category.png" alt="Tableau Sales by Category" />
-          <h3>Sales by Category</h3>
-          <p>Tableau bar chart comparing revenue across product categories.</p>
-        </div>
-
-        <div class="visual-card">
-          <img src="Visuals/tableau_sales_region.png" alt="Tableau Sales by Region" />
-          <h3>Sales by Region</h3>
-          <p>Tableau chart showing how sales are distributed across regions.</p>
-        </div>
-
-        <div class="visual-card">
-          <img src="Visuals/tableau_monthly_trend.png" alt="Tableau Monthly Sales Trend" />
-          <h3>Monthly Sales Trend</h3>
-          <p>Tableau trend visualization showing performance over time.</p>
-        </div>
-
-        <div class="visual-card">
-          <img src="Visuals/tableau_top_products.png" alt="Tableau Top 10 Products" />
-          <h3>Top 10 Products</h3>
-          <p>Tableau chart highlighting products with the highest sales contribution.</p>
-        </div>
-
-        <div class="visual-card">
-          <img src="Visuals/tableau_discount_profit.png" alt="Tableau Discount vs Profit" />
-          <h3>Discount vs Profit</h3>
-          <p>Tableau analysis exploring how discounting affects profitability.</p>
-        </div>
-      </div>
-    </section>
-
-    <section id="insights" class="section">
-      <h2>Key Insights</h2>
-
-      <div class="insight-grid">
-        <div class="insight-card">
-          The West region generated the highest overall sales.
-        </div>
-
-        <div class="insight-card">
-          Technology was one of the strongest-performing categories.
-        </div>
-
-        <div class="insight-card">
-          A small group of products contributed a large share of total revenue.
-        </div>
-
-        <div class="insight-card">
-          Sales trends showed steady activity over time.
-        </div>
-
-        <div class="insight-card">
-          Discounting had a noticeable impact on profitability.
-        </div>
-      </div>
-    </section>
-
-    <section class="section">
-      <h2>Conclusion</h2>
-      <p>
-        This project demonstrates how retail sales data can be transformed into
-        actionable business insights through data cleaning, SQL analysis,
-        and dashboard-style visualization.
-      </p>
-    </section>
-
-    <section class="final-box">
-      <h2>Project Repository</h2>
-      <p>
-        View the complete notebook, SQL queries, dataset files, and project materials
-        in the GitHub repository.
-      </p>
-
-      <a
-        href="https://github.com/bindhusaahithi/Sales-Analytics"
-        target="_blank"
-        class="btn primary"
-      >
-        Open GitHub Repository
+  <div class="page-shell">
+    <nav class="navbar" aria-label="Primary navigation">
+      <a class="brand" href="#top" aria-label="Bindhu Saahithi home">
+        <span class="brand-mark">BS</span>
+        <span>
+          <strong>Bindhu Saahithi</strong>
+          <small>Data Analyst Portfolio</small>
+        </span>
       </a>
-    </section>
-  </main>
 
-  <footer>
-    <p>© 2026 Bindhu Saahithi | Data Portfolio</p>
-  </footer>
+      <ul class="nav-links">
+        <li><a href="#overview">Overview</a></li>
+        <li><a href="#workflow">Workflow</a></li>
+        <li><a href="#visuals">Visuals</a></li>
+        <li><a href="#insights">Insights</a></li>
+        <li><a class="nav-cta" href="https://github.com/bindhusaahithi/Sales-Analytics" target="_blank" rel="noreferrer">GitHub</a></li>
+      </ul>
+    </nav>
 
+    <header id="top" class="hero">
+      <div class="hero-grid container">
+        <div class="hero-copy reveal">
+          <p class="eyebrow">Business intelligence case study</p>
+          <h1>Turning retail sales data into executive-ready insight.</h1>
+          <p class="hero-text">
+            An end-to-end analytics portfolio project using Python, SQL, and Tableau to investigate revenue trends,
+            regional performance, product contribution, and the impact of discounts on profitability.
+          </p>
+
+          <div class="hero-actions" aria-label="Project links">
+            <a class="btn btn-primary" href="https://github.com/bindhusaahithi/Sales-Analytics" target="_blank" rel="noreferrer">Explore Repository</a>
+            <a class="btn btn-secondary" href="#visuals">View Analysis</a>
+          </div>
+        </div>
+
+        <aside class="hero-panel reveal" aria-label="Project summary">
+          <div class="panel-topline">
+            <span>Sample Superstore</span>
+            <span>Retail Analytics</span>
+          </div>
+          <div class="hero-metric">
+            <span>Total Sales</span>
+            <strong>$2.33M</strong>
+          </div>
+          <div class="sparkline" aria-hidden="true">
+            <span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+          </div>
+          <div class="mini-stats">
+            <div>
+              <small>Profit</small>
+              <strong>$292K</strong>
+            </div>
+            <div>
+              <small>Orders</small>
+              <strong>5,111</strong>
+            </div>
+            <div>
+              <small>Core Tools</small>
+              <strong>3</strong>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </header>
+
+    <main>
+      <section class="metric-strip container" aria-label="Project metrics">
+        <article>
+          <span>Total Sales</span>
+          <strong>$2.33M</strong>
+          <p>Revenue analyzed across regions, categories, and products.</p>
+        </article>
+        <article>
+          <span>Total Profit</span>
+          <strong>$292K</strong>
+          <p>Profitability reviewed alongside discount behavior.</p>
+        </article>
+        <article>
+          <span>Total Orders</span>
+          <strong>5,111</strong>
+          <p>Cleaned transaction records powering the analysis.</p>
+        </article>
+      </section>
+
+      <section id="overview" class="section container split-section">
+        <div>
+          <p class="eyebrow">Project overview</p>
+          <h2>A full analytics workflow, packaged as a portfolio case study.</h2>
+        </div>
+        <div class="section-copy">
+          <p>
+            This project analyzes retail transaction data to surface key business insights around sales,
+            profit, regional performance, product categories, and discount strategy.
+          </p>
+          <p>
+            The work demonstrates practical analyst skills across data cleaning, exploratory analysis,
+            SQL-based business questioning, and dashboard storytelling in Tableau.
+          </p>
+        </div>
+      </section>
+
+      <section class="container card-grid" aria-label="Project details">
+        <article class="info-card tall-card">
+          <span class="card-kicker">Toolkit</span>
+          <h3>Built with analyst-ready tools</h3>
+          <div class="tool-cloud" aria-label="Tools used">
+            <span>Python</span>
+            <span>Pandas</span>
+            <span>Matplotlib</span>
+            <span>Jupyter</span>
+            <span>SQL</span>
+            <span>Tableau</span>
+            <span>GitHub</span>
+          </div>
+        </article>
+
+        <article class="info-card">
+          <span class="card-kicker">Dataset</span>
+          <h3>Sample Superstore</h3>
+          <p>
+            A retail dataset containing customer orders, products, sales, profit, shipping details,
+            and geographic segments.
+          </p>
+          <a href="https://public.tableau.com/app/learn/sample-data" target="_blank" rel="noreferrer">View dataset source</a>
+        </article>
+
+        <article class="info-card accent-card">
+          <span class="card-kicker">Business focus</span>
+          <h3>Questions that guide action</h3>
+          <p>
+            Which regions sell best? Which categories lead? Which products carry revenue? How does discounting shape profit?
+          </p>
+        </article>
+      </section>
+
+      <section id="workflow" class="section container">
+        <div class="section-heading">
+          <p class="eyebrow">Workflow</p>
+          <h2>From raw rows to boardroom-ready visuals.</h2>
+        </div>
+
+        <div class="timeline" aria-label="Project workflow steps">
+          <article>
+            <span>01</span>
+            <h3>Raw Data</h3>
+            <p>Loaded the Superstore dataset and reviewed field quality.</p>
+          </article>
+          <article>
+            <span>02</span>
+            <h3>Python Cleaning</h3>
+            <p>Standardized columns, checked nulls, removed duplicates, and created analysis fields.</p>
+          </article>
+          <article>
+            <span>03</span>
+            <h3>EDA</h3>
+            <p>Explored categories, regions, products, monthly trends, and profitability patterns.</p>
+          </article>
+          <article>
+            <span>04</span>
+            <h3>SQL Analysis</h3>
+            <p>Answered business questions with focused revenue, profit, and ranking queries.</p>
+          </article>
+          <article>
+            <span>05</span>
+            <h3>Tableau</h3>
+            <p>Built dashboard visuals to communicate findings clearly and quickly.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="visuals" class="section visuals-section">
+        <div class="container section-heading light-heading">
+          <p class="eyebrow">Visual analysis</p>
+          <h2>Charts that make the business story easy to scan.</h2>
+          <p>
+            Python visuals support exploration, while Tableau visuals shape the final dashboard narrative.
+          </p>
+        </div>
+
+        <div class="container visual-block">
+          <div class="visual-label">
+            <span>Python EDA</span>
+            <p>Exploratory charts created during analysis.</p>
+          </div>
+          <div class="visual-grid">
+            <article class="visual-card featured-visual">
+              <img src="Visuals/monthly_sales.png" alt="Monthly sales trend chart created in Python" />
+              <div>
+                <h3>Monthly Sales Trend</h3>
+                <p>Tracks sales movement over time to identify periods of stronger activity.</p>
+              </div>
+            </article>
+            <article class="visual-card">
+              <img src="Visuals/sales_by_category.png" alt="Sales by category chart created in Python" />
+              <div>
+                <h3>Sales by Category</h3>
+                <p>Compares category-level revenue performance.</p>
+              </div>
+            </article>
+            <article class="visual-card">
+              <img src="Visuals/sales_region_pie.png" alt="Sales by region pie chart created in Python" />
+              <div>
+                <h3>Sales by Region</h3>
+                <p>Shows regional contribution to total sales.</p>
+              </div>
+            </article>
+            <article class="visual-card">
+              <img src="Visuals/top_products.png" alt="Top products chart created in Python" />
+              <div>
+                <h3>Top Products</h3>
+                <p>Highlights products with the largest revenue contribution.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <div class="container visual-block">
+          <div class="visual-label">
+            <span>Tableau Dashboard</span>
+            <p>Presentation-ready visuals for stakeholders.</p>
+          </div>
+          <div class="visual-grid tableau-grid">
+            <article class="visual-card">
+              <img src="Visuals/tableau_total_sales.png" alt="Tableau total sales KPI" />
+              <div>
+                <h3>Total Sales KPI</h3>
+                <p>Summarizes total revenue at a glance.</p>
+              </div>
+            </article>
+            <article class="visual-card">
+              <img src="Visuals/tableau_sales_category.png" alt="Tableau sales by category chart" />
+              <div>
+                <h3>Sales by Category</h3>
+                <p>Compares revenue by product category.</p>
+              </div>
+            </article>
+            <article class="visual-card">
+              <img src="Visuals/tableau_sales_region.png" alt="Tableau sales by region chart" />
+              <div>
+                <h3>Sales by Region</h3>
+                <p>Breaks down sales distribution across regions.</p>
+              </div>
+            </article>
+            <article class="visual-card">
+              <img src="Visuals/tableau_monthly_trend.png" alt="Tableau monthly sales trend chart" />
+              <div>
+                <h3>Monthly Trend</h3>
+                <p>Communicates sales performance over time.</p>
+              </div>
+            </article>
+            <article class="visual-card">
+              <img src="Visuals/tableau_top_products.png" alt="Tableau top 10 products chart" />
+              <div>
+                <h3>Top 10 Products</h3>
+                <p>Ranks the highest sales contributors.</p>
+              </div>
+            </article>
+            <article class="visual-card">
+              <img src="Visuals/tableau_discount_profit.png" alt="Tableau discount versus profit chart" />
+              <div>
+                <h3>Discount vs Profit</h3>
+                <p>Explores how discounting affects profitability.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="insights" class="section container split-section">
+        <div>
+          <p class="eyebrow">Key insights</p>
+          <h2>What the analysis revealed.</h2>
+        </div>
+        <div class="insight-grid">
+          <article>
+            <span>01</span>
+            <p>The West region generated the highest overall sales.</p>
+          </article>
+          <article>
+            <span>02</span>
+            <p>Technology emerged as one of the strongest-performing categories.</p>
+          </article>
+          <article>
+            <span>03</span>
+            <p>A small group of products contributed a large share of revenue.</p>
+          </article>
+          <article>
+            <span>04</span>
+            <p>Discounting had a noticeable impact on profitability.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="container final-box">
+        <p class="eyebrow">Repository</p>
+        <h2>Explore the full analytics build.</h2>
+        <p>
+          The GitHub repository includes the notebook, SQL queries, cleaned data, Tableau workbook,
+          and project visuals used in this portfolio case study.
+        </p>
+        <a class="btn btn-primary" href="https://github.com/bindhusaahithi/Sales-Analytics" target="_blank" rel="noreferrer">Open GitHub Repository</a>
+      </section>
+    </main>
+
+    <footer>
+      <p>© 2026 Bindhu Saahithi. Sales Analytics Portfolio.</p>
+    </footer>
+  </div>
 </body>
 </html>

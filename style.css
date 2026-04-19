@@ -86,10 +86,12 @@ a{
 
 
 .nav-links{
+  width:100%;
   list-style:none;
   display:flex;
   align-items:center;
-  gap:6px;
+  justify-content:center;
+  gap:18px;
 }
 
 .nav-links a{

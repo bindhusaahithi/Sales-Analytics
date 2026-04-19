@@ -142,6 +142,16 @@ a{
   transform:translateY(-1px);
 }
 
+.nav-links .nav-cta{
+  color:#fff8e8;
+  background:var(--forest);
+}
+
+.nav-links .nav-cta:hover{
+  color:#fff8e8;
+  background:#0b2a20;
+}
+
 .hero{
   padding:88px 0 54px;
 }
